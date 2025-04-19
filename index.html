@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LDL & VLDL Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>LDL & VLDL Calculator</h2>
+
+    <div class="input-group">
+      <label for="totalCholesterol">Total Cholesterol (mg/dL):</label>
+      <input type="number" id="totalCholesterol" placeholder="e.g. 200" />
+    </div>
+
+    <div class="input-group">
+      <label for="hdl">HDL (High-Density Lipoprotein) (mg/dL):</label>
+      <input type="number" id="hdl" placeholder="e.g. 50" />
+    </div>
+
+    <div class="input-group">
+      <label for="triglycerides">Triglycerides (mg/dL):</label>
+      <input type="number" id="triglycerides" placeholder="e.g. 150" />
+    </div>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="results" id="results" style="display:none;">
+      <p><strong>LDL:</strong> <span id="ldlValue"></span> mg/dL</p>
+      <p><strong>VLDL:</strong> <span id="vldlValue"></span> mg/dL</p>
+    </div>
+
+    <div class="instructions">
+      <h4>How to Use:</h4>
+      <ul>
+        <li>Enter Total Cholesterol, HDL, and Triglycerides values.</li>
+        <li>Click "Calculate".</li>
+        <li>View your LDL and VLDL results instantly.</li>
+      </ul>
+    </div>
+
+    <footer>
+      Developed by <strong>Rakibul Ariyan</strong>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
